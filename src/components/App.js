@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from './banners/Header';
+import Footer from './banners/Footer';
 
 export default function App() {
   return (
-    <h1>UnFash</h1>
+    <>
+    <Header />
+    <p>fashion goes here</p>
+    <Footer />
+    </>
   );
 }

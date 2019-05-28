@@ -1,10 +1,8 @@
 import React from 'react';
-import Header from './banners/Header';
-import Footer from './banners/Footer';
-import Thumbnails from './thumbnails/Thumbnails';
+import Thumbnails from './Thumbnails';
+import { shallow } from 'enzyme';
 
-
-export default function App() {
+describe('Thumbnails component', () => {
   const thumbnailList = [
     {
       imgUrl: 'https://images.unsplash.com/photo-1556229174-5e42a09e45af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=643&q=80',
@@ -19,12 +17,8 @@ export default function App() {
       title: 'and a third'
     }
   ];
-
-  return (
-    <>
-    <Header />
-      <Thumbnails thumbnails={thumbnailList} />
-    <Footer />
-    </>
-  );
-}
+  it('Renders a list of thumbnails', ()=> {
+    const wrapper = shallow(<Thumbnails thumbnails={thumbnailList} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+});

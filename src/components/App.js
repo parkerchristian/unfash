@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './banners/Header';
 import Footer from './banners/Footer';
 import Thumbnails from './thumbnails/Thumbnails';
+import FashForm from './thumbnails/ThumbnailForm';
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
   return (
     <>
     <Header />
+      <FashForm />
       <Thumbnails thumbnails={thumbnailList} />
     <Footer />
     </>

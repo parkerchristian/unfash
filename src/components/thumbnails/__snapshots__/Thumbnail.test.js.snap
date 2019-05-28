@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail component renders a thumbnail 1`] = `
+<Fragment>
+  <h3>
+    Look at this stupid outfit
+  </h3>
+  <img
+    src="abc.com"
+  />
+</Fragment>
+`;

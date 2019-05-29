@@ -2,11 +2,21 @@
 
 exports[`Thumbnail component renders a thumbnail 1`] = `
 <Fragment>
-  <h3>
-    Look at this stupid outfit
-  </h3>
-  <img
-    src="abc.com"
-  />
+  <Link
+    to="/undefined"
+  >
+    <h3>
+      Look at this stupid outfit
+    </h3>
+    <img
+      src="abc.com"
+      style={
+        Object {
+          "height": "auto",
+          "width": "200px",
+        }
+      }
+    />
+  </Link>
 </Fragment>
 `;

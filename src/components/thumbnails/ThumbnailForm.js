@@ -15,7 +15,6 @@ export default class ThumbnailForm extends PureComponent {
     event.preventDefault();
     const { title, imgUrl } = this.state;
     // error here ?
-    console.log(this.props);
     this.props.onSubmit(title, imgUrl);
     this.setState({ title: '', imgUrl: '' });
   }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Thumbnail from './Thumbnail';
 
 function Thumbnails({ thumbnails }) {
+  console.log(thumbnails);
   const thumbnailList = thumbnails.map(thumbnail => (
     <li key={thumbnail.imgUrl}>
       <Thumbnail imgUrl={thumbnail.imgUrl} title={thumbnail.title} />

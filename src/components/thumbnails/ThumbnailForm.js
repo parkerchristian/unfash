@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
-export default class FashForm extends PureComponent {
+export default class ThumbnailForm extends PureComponent {
   static propTypes = {
     onSubmit: PropTypes.func.isRequired
   }
@@ -15,6 +15,7 @@ export default class FashForm extends PureComponent {
     event.preventDefault();
     const { title, imgUrl } = this.state;
     // error here ?
+    console.log(this.props);
     this.props.onSubmit(title, imgUrl);
     this.setState({ title: '', imgUrl: '' });
   }
